@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}
+.contenedor{
+    padding: 10px;
+    border: 10px solid;
+    border-color: blue;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    background-color: blueviolet;
+}
+
+.navegacion{
+    grid-area: navegacion;
+    background-color: brown;
+}
+
+.menu_lateral{
+    grid-area: menu_lateral;
+    background-color: chartreuse;
+}
+
+.articulo{
+    grid-area: articulo;
+    background-color: black;
+    color: aliceblue;
+}
+
+.pie_de_pagina{
+    grid-area: pie_de_pagina;
+    background-color: aqua;
+}
+
+.contenedor{
+    display:grid;
+    grid-template:
+        "encabezado encabezado encabezado" 100px 
+        "navegacion navegacion navegacion" 50px
+        "menu_lateral menu_lateral menu_lateral" auto
+        "articulo articulo articulo" 50px
+        "pie_de_pagina pie_de_pagina pie_de_pagina" 100px;
+
+}
